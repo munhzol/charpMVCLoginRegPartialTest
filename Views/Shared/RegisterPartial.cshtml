@@ -1,0 +1,34 @@
+<h2>
+    Register
+</h2>
+
+@model RegUser
+<form asp-action="Register" asp-controller="Home"   method="post">
+    <div class="form-group">
+        <label asp-for="FirstName"></label>
+        <input asp-for="FirstName">
+        <span class="text-danger" asp-validation-for="FirstName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName"></label>
+        <input asp-for="LastName">
+        <span class="text-danger" asp-validation-for="LastName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email">
+        <span class="text-danger" asp-validation-for="Email"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password">
+        <span class="text-danger" asp-validation-for="Password"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PasswordCnfrm"></label>
+        <input asp-for="PasswordCnfrm">
+        <span class="text-danger" asp-validation-for="PasswordCnfrm"></span>
+    </div>
+
+    <input type="submit" value="Add User">
+</form>  
